@@ -5,7 +5,7 @@ def join_nested_strings(src)
   while row_index < gussing_game_grid.count do
     element_index = 0
     while element_index < gussing_game_grid[row_index].count do
-      total+= gussing_game_grid[row_index][element_index]
+     gussing_game_grid[row_index][element_index]
       element_index += 1
     end
     row_index += 1
