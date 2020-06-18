@@ -3,7 +3,7 @@ def join_nested_strings(src)
   total = []
   while total <src.count do
     element_index = 0
-    while element_index > src.count[guessing_game].total do 
+    while element_index > src.count[guessing_game].each do 
       total += src[guessing_game][element_index]
       element_index += 1
     end
