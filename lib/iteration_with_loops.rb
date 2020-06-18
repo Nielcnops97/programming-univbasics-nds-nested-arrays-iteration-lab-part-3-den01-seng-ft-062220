@@ -1,14 +1,20 @@
 def join_nested_strings(src)
-  gussing_game_grid= []
-  total = []
-  row_index = 0
-  while row_index < gussing_game_grid.count do
-    element_index = 0
-    while element_index < gussing_game_grid[row_index].count do
-      total+= gussing_game_grid[row_index][element_index]
-      element_index += 1
+  row_index=0
+  nested_strings=[]
+  while row_index < src.count do
+    inner_index=0
+   #string_element= ""
+    while inner_index< src[row_index].count do
+      if src[row_index][inner_index] == " "
+       #string_element=src[row_index][inner_index]
+      end
+      inner_index += 1
     end
-    row_index += 1
+     nested_strings << src[row_index][inner_index].join('')
+  row_index += 1
+end
+nested_strings
+end
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
 end
