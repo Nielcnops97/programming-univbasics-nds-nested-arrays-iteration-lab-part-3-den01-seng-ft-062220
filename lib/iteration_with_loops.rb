@@ -3,7 +3,7 @@ def join_nested_strings(src)
   nested_strings=0
   while row_index < src.count do
     inner_index=0
-   #string_element= ""
+   string_element = ""
     while inner_index< src[row_index].count do
       if src[row_index][inner_index].class == ""
        #string_element=src[row_index][inner_index]
