@@ -10,7 +10,7 @@ def join_nested_strings(src)
       end
       inner_index += 1
     end
-     nested_strings << src[row_index][inner_index].join('')
+     nested_strings << src[row_index][inner_index].class('')
   row_index += 1
 end
 nested_strings
